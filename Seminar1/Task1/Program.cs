@@ -1,7 +1,8 @@
-﻿// Console.WriteLine("Введите чило: ");
+﻿Console.Clear();
+// Console.WriteLine("Введите чило: ");
 // int f = Convert.ToInt32(Console.ReadLine());
 // Console.Write(f + 10);
-
+//______________________________________________________________________________
 // Напишите программу, которая на вход
 // принимает два целых числа и проверяет,
 // является ли первое число квадратом второго
@@ -10,14 +11,47 @@
 // a = 9, b = -3 => да
 // a = -3, b = 9 => нет
 
-Console.Clear();
-Console.WriteLine("Введите чило № 1: ");
-int a = Convert.ToInt32(Console.ReadLine());
+//Решение:
+// Console.WriteLine("Введите чило № 1: ");
+// int a = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine("Введите число № 2: ");
-int b = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число № 2: ");
+// int b = Convert.ToInt32(Console.ReadLine());
 
-if (a == b * b)
-    Console.WriteLine("yes");
-else
-    Console.WriteLine("no");
+// if (a == b * b)
+//     Console.WriteLine("yes");
+// else
+//     Console.WriteLine("no");
+
+//______________________________________________________________________________
+// Напишите программу, которая на вход принимает
+// целое число N, а на выходе показывает все целые
+// числа в промежутке от -N до N.
+// Примеры:
+// 4 => -4, -3, -2, -1, 0, 1, 2, 3, 4
+// 2 => -2, -1, 0, 1, 2
+
+//Решение:
+// Console.Write("Введите чило: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+
+// int i = n * (-1);
+// while (i <= n)
+// {
+//     Console.Write(i + " ");
+//     i ++;
+// }
+
+// Напишите программу, которая принимает на вход
+// трехзначное целое число и на выходе показывает сумму
+// первой и последней цифры этого числа.
+// 456 => 10
+// 782 => 9
+// 918 => 17
+
+//Решение:
+Console.Write("Введите трехзначное чило: ");
+int n = Convert.ToInt32(Console.ReadLine());
+int n1 = n / 100;
+int n3 = n % 10;
+Console.WriteLine(n1 + n3);
