@@ -13,7 +13,7 @@ for (int i = 0; i < array.Length; i++)
     array[i] = new Random().Next(1, 11);
 Console.WriteLine(string.Join(", ", array));
 
-int[] new_array = new int[array.Length /2];
+int[] new_array = new int[array.Length / 2];
 for (int i = 0; i < array.Length / 2; i++)
     new_array[i] = array[i] * array[array.Length - 1 - i];
 
